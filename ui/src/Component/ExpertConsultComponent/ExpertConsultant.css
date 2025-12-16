@@ -1,0 +1,84 @@
+.consult-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.consult-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.consult-sub {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Grid Layout: 2 cards per row */
+.consult-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Doctor Card */
+.consult-card {
+  background-color: #f7f7f7; /* neutral clean color */
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 300px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.2s ease-in-out;
+}
+
+.consult-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+}
+
+/* Text Styling */
+.doc-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.doc-specialty {
+  font-size: 16px;
+  color: #0b8c5a; /* mint-ish accent */
+  margin-bottom: 5px;
+}
+
+.doc-exp {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.doc-contact {
+  font-size: 14px;
+  color: #444;
+  margin-top: 10px;
+}
+
+/* Mint Back Button */
+.back-btn {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #98ff98;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-btn:hover {
+  background-color: #7ee07e;
+  transform: translateY(-2px);
+}

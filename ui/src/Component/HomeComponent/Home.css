@@ -1,0 +1,68 @@
+/* Pastel mental health theme colors */
+:root {
+  --primary: #6a8caf;        /* calm blue */
+  --accent: #b8d8ba;         /* soft green */
+  --light-pink: #f5e6e8;     /* light pink background */
+  --text-dark: #2f3e46;
+}
+
+.about-section, .events-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 25px;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  width: 75%;
+  margin: auto;
+  color: #4f5d64;
+  line-height: 1.6;
+}
+
+/* Events Section */
+.events-section {
+  background-color: #ffffff;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.event-card {
+  background: var(--accent);
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+  transition: transform .3s ease;
+}
+
+.event-card h3 {
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.event-card p {
+  color: #36454f;
+  margin-bottom: 10px;
+}
+
+.event-card span {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.event-card:hover {
+  transform: translateY(-6px);
+}

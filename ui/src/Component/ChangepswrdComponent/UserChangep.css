@@ -1,0 +1,78 @@
+.cpadmin-container {
+  width: 380px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #333;
+  font-weight: 600;
+}
+
+.output-msg {
+  background: #ffecec;
+  color: #d8000c;
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.cpadmin-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #444;
+}
+
+.cpadmin-form input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.cpadmin-form input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 3px rgba(74, 144, 226, 0.4);
+}
+
+.cpadmin-form button {
+  width: 100%;
+  background: #4a90e2;
+  color: white;
+  padding: 12px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.cpadmin-form button:hover {
+  background: #3c7ac0;
+}
+
+@media (max-width: 480px) {
+  .cpadmin-container {
+    width: 90%;
+    padding: 20px;
+  }
+  
+  .form-title {
+    font-size: 20px;
+  }
+}

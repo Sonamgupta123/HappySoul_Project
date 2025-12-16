@@ -1,0 +1,40 @@
+.joke-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.joke-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.joke-sub {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.joke-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.joke-card {
+  background-color: #f2f2f2; /* normal card color */
+  color: #1a1a1a;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 350px;
+  font-size: 16px;
+  text-align: left;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.joke-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}

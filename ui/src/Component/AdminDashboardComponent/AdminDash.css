@@ -1,0 +1,50 @@
+.admin-dashboard {
+  max-width: 900px;
+}
+
+.welcome-card {
+  background: #e8f9e9;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.welcome-card h2 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #145a32;
+}
+
+.stats-card {
+  background: #d4efdf;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.stats-card h4 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.stats-card .count {
+  font-size: 40px;
+  font-weight: bold;
+  color: #1e8449;
+  margin-top: 10px;
+}
+
+.table {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th {
+  text-align: center;
+}
+
+.table td {
+  vertical-align: middle;
+}

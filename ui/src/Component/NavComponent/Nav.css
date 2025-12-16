@@ -1,0 +1,152 @@
+
+/* Main Navbar */
+.navbar {
+  background: #d1f3ca;
+  padding: 12px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  background: #e6f7f1; /* light mint green */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+/* Brand Styling */
+.navbar-brand span {
+  font-weight: 700;
+  color: #2c6e63;
+  font-size: 22px;
+  line-height: 18px;
+}
+
+.navbar-brand small {
+  display: block;
+  font-size: 12px;
+  color: #5fa889;
+}
+
+/* Nav Links */
+.nav-link {
+  color: #2c6e63;
+  font-weight: 500;
+  padding: 10px 18px !important;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  background: #dff5e8;
+  color: #1c5a52;
+}
+
+/* Login / Logout Button */
+.custom-btn {
+  border: 2px solid #2c6e63 !important;
+  border-radius: 20px;
+  padding: 7px 20px !important;
+  transition: 0.3s;
+}
+
+.custom-btn:hover {
+  background: #2c6e63 !important;
+  color: white !important;
+}
+
+/* Dropdown Generic Styling */
+/* .dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 18px;
+  border-radius: 6px;
+  color: #2c6e63;
+  transition: 0.3s;
+}
+
+.dropbtn:hover {
+  background: #dff5e8;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 42px;
+  background: white;
+  width: 200px;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+  z-index: 99;
+}
+
+.dropdown-content a {
+  padding: 12px 18px;
+  display: block;
+  color: #2c6e63;
+  transition: 0.2s;
+}
+
+.dropdown-content a:hover {
+  background: #e3f7ed;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+} */
+
+/* For small screens */
+@media(max-width: 992px) {
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    width: 100%;
+    padding-left: 10px;
+  }
+}
+
+
+/* For small screens */
+@media(max-width: 992px) {
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    width: 100%;
+    padding-left: 10px;
+  }
+}
+
+/* Admin Profile Dropdown */
+.custom-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 180px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.25s ease-in-out;
+  z-index: 9999;
+}
+
+.custom-dropdown.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.custom-dropdown .dropdown-item {
+  padding: 10px 20px;
+}
+
+.custom-dropdown .dropdown-item:hover {
+  background: #f0f0f0;
+}

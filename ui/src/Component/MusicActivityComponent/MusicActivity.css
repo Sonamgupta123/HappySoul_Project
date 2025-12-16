@@ -1,0 +1,74 @@
+.music-container {
+  padding: 30px;
+  max-width: 700px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.music-title {
+  text-align: center;
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.music-sub {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.song-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.song-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f7f7;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border-left: 5px solid #27ae60;
+}
+
+.song-name {
+  font-size: 17px;
+  color: #34495e;
+}
+
+.play-btn {
+  text-decoration: none;
+  background: #27ae60;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.play-btn:hover {
+  background: #1f8b4d;
+}
+.back-btn {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #98ff98; /* mint theme */
+  color: #1a1a1a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-btn:hover {
+  background-color: #7ee07e;
+  transform: translateY(-2px);
+}
