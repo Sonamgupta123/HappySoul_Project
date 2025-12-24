@@ -1,0 +1,88 @@
+/* AIChat.css */
+
+/* Container for Vapi assistant */
+#vapi-container {
+  width: 100%;
+  max-width: 700px;
+  min-height: 450px;
+  margin: 2rem auto;
+  padding: 1.25rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(18px) saturate(180%);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Chat messages */
+#vapi-container .vapi-message {
+  margin: 0.25rem 0;
+  padding: 0.85rem 1rem;
+  border-radius: 18px;
+  max-width: 75%;
+  font-size: 1rem;
+  line-height: 1.5;
+  word-wrap: break-word;
+  animation: slideUp 0.4s ease both;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#vapi-container .vapi-message:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+/* User message styling */
+#vapi-container .vapi-message.user {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+
+/* Assistant message styling */
+#vapi-container .vapi-message.assistant {
+  background: rgba(255, 255, 255, 0.85);
+  color: #111;
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Scrollbar */
+#vapi-container::-webkit-scrollbar {
+  width: 6px;
+}
+#vapi-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+/* Header */
+#vapi-container .vapi-header {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #111;
+  letter-spacing: -0.5px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+button{
+  background-color: yellow;
+}
