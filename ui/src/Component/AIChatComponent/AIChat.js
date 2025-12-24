@@ -33,14 +33,28 @@ console.log("Vapi Key:", process.env.REACT_APP_VAPI_PUBLIC_KEY);
       vapiInstance.stop();
     };
   }, []);
+const handleStart = async () => {
+  try {
+    // 1️⃣ Force audio unlock (CRITICAL)
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
 
-  const handleStart = () => {
-    if (!vapi) return;
+    // 2️⃣ Create audio context manually
+    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    await audioContext.resume();
 
-    vapi.start({
-      assistantId: "339bf936-5cf5-46ca-b870-637c7477a1b3", // ✅ hard-coded OK
+    // 3️⃣ Stop preview stream (important)
+    stream.getTracks().forEach(track => track.stop());
+
+    // 4️⃣ NOW start Vapi
+    await vapi.start({
+      assistantId: "339bf936-5cf5-46ca-b870-637c7477a1b3",
     });
-  };
+
+  } catch (err) {
+    console.error("START FAILED:", err);
+    alert("Microphone or audio blocked by browser");
+  }
+};
 
   const handleStop = () => {
     vapi?.stop();
