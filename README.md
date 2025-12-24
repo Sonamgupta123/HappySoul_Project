@@ -13,6 +13,7 @@ HappySoul is a full-stack mental wellness platform designed to help users track 
 - Edit Profile
 - Change Password
 - Personalized Dashboard
+- Voice Based AI assistant for consultant
 
 ---
 
