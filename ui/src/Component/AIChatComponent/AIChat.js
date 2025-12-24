@@ -1,4 +1,4 @@
-// src/components/AssistantWidget.jsx
+
 import { useEffect, useState } from "react";
 import Vapi from "@vapi-ai/web";
 
@@ -9,10 +9,12 @@ const AIChat = () => {
 
   useEffect(() => {
     const vapiInstance = new Vapi(
-      import.meta.env.VITE_VAPI_PUBLIC_KEY // ✅ correct
-    );
+  process.env.REACT_APP_VAPI_PUBLIC_KEY
+);
+console.log("Vapi Key:", process.env.REACT_APP_VAPI_PUBLIC_KEY);
 
-    setVapi(vapiInstance);
+
+     setVapi(vapiInstance);
 
     vapiInstance.on("call-start", () => setConnected(true));
     vapiInstance.on("call-end", () => setConnected(false));
