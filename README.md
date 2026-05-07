@@ -77,7 +77,7 @@ Backend:
 
 cd api
 npm install
-nodemon server.js
+nodemon app.js
 
 🙌 Author
 
